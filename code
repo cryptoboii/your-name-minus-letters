@@ -1,0 +1,74 @@
+//Program Name: Your Full Name Without Certain Letters
+//Developer: cryptoboii
+//Date: 7/11/17
+//Purpose: Allow the user to enter their name and remove letters for fun
+
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+	
+//Request first, middle, and last name 
+//Store in corresponding variables
+		
+		System.out.print("Enter first name: ");
+		String fname = input.next();
+		
+		System.out.print("Enter middle name: ");
+		String mname = input.next();
+		
+		System.out.print("Enter last name: ");
+		String lname = input.next();
+
+//Replace characters in first name	
+		
+		fname = fname.replace("e","");
+		fname = fname.replace("f","");
+		fname = fname.replace("r","");
+		fname = fname.replace("s","");
+		fname = fname.replace("k","");
+		fname = fname.replace("i","");
+		fname = fname.replace("m","");
+		fname = fname.replace("l","");
+		fname = fname.replace("c","");
+		fname = fname.replace("a","");
+		fname = fname.replace("y","");
+		fname = fname.replace("n","");
+		
+//Replace characters in first name	
+		
+		mname = mname.replace("e","");
+		mname = mname.replace("f","");
+		mname = mname.replace("r","");
+		mname = mname.replace("s","");
+		mname = mname.replace("k","");
+		mname = mname.replace("i","");
+		mname = mname.replace("m","");
+		mname = mname.replace("l","");
+		mname = mname.replace("c","");
+		mname = mname.replace("a","");
+		mname = mname.replace("y","");
+		mname = mname.replace("n","");
+		
+//Replace characters in last name	
+		
+		lname = lname.replace("e","");
+		lname = lname.replace("f","");
+		lname = lname.replace("r","");
+		lname = lname.replace("s","");
+		lname = lname.replace("k","");
+		lname = lname.replace("i","");
+		lname = lname.replace("m","");
+		lname = lname.replace("l","");
+		lname = lname.replace("c","");
+		lname = lname.replace("a","");
+		lname = lname.replace("y","");
+		lname = lname.replace("n","");
+		
+		System.out.println(fname + "  " + mname + " " + lname);
+		
+	}
+
+}
